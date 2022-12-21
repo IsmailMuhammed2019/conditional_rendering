@@ -1,10 +1,14 @@
 import React from 'react'
 
 const Jokes = (props) => {
+const styles = {
+  display: "none",
+}
+
   return (
     <div>
       <h2>{props.title}</h2>
-      <p>{props.punchline}</p>
+      <p style={styles}>{props.punchline}</p>
       <button onClick={props.toggle}>View Punchline</button>
     </div>
   )
