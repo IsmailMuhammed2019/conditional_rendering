@@ -6,6 +6,7 @@ import data from './data'
 
 function App() {
 
+const [joke, setJoke] = React.useState(data)
 
   return (
     <div className="App">
