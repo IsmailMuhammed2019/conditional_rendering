@@ -1,9 +1,11 @@
 import React from 'react'
-import data from './data'
 
-const Jokes = () => {
+const Jokes = (props) => {
   return (
-    <div>Jokes</div>
+    <div>
+      <h2>{props.title}</h2>
+      <p>{props.punchline}</p>
+    </div>
   )
 }
 
