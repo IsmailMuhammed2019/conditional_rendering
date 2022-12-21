@@ -6,7 +6,7 @@ const [isShown, setIsShown] = React.useState(false)
 
 
 function toggle() {
-  setIsShown(preState =>  preState === !preState )
+  setIsShown(preState =>!preState )
 }
 
   return (
