@@ -1,15 +1,19 @@
 import React from 'react'
 
 const Jokes = (props) => {
-const styles = {
-  display: "none",
+
+const [isShown, setIsShown] = React.useState(false)
+
+
+function toggle() {
+  setIsShown(preState =>  preState === !preState )
 }
 
   return (
     <div>
-      <h2>{props.title}</h2>
-      <p style={styles}>{props.punchline}</p>
-      <button onClick={props.toggle}>View Punchline</button>
+      {props.title && <h2>{props.title}</h2>}
+      {isShown && <p>{props.punchline}</p>}
+      <button onClick={toggle}>View Punchline</button>
     </div>
   )
 }
