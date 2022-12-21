@@ -5,7 +5,7 @@ const Jokes = (props) => {
     <div>
       <h2>{props.title}</h2>
       <p>{props.punchline}</p>
-      <button>View Punchline</button>
+      <button onClick={props.toggle}>View Punchline</button>
     </div>
   )
 }
