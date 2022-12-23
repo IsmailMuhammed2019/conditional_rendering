@@ -13,7 +13,7 @@ function toggle() {
     <div>
       {props.title && <h2>{props.title}</h2>}
       {isShown && <p>{props.punchline}</p>}
-      <button onClick={toggle}>View Punchline</button>
+      <button onClick={toggle}>{!isShown ? "View" : "Hide"} Punchline</button>
     </div>
   )
 }
